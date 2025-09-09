@@ -4,7 +4,8 @@ export default function Home() {
   const [message, setMessage] = useState("Loading...");
 
   useEffect(() => {
-    fetch(process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/")
+    console.log("API URL:", process.env.NEXT_PUBLIC_API_BASE_URL);
+    fetch(process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000/")
       .then(res => res.json())
       .then(data => setMessage(data.message))
       .catch(err => setMessage("Error: " + err));

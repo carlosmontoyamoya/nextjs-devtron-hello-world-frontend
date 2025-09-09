@@ -1,0 +1,24 @@
+# Dependencias
+/node_modules
+
+# Build output
+/.next
+/out
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files (contienen credenciales o configuraciones sensibles)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# MacOS / VSCode / otros
+.DS_Store
+*.swp
+.vscode
